@@ -1,3 +1,11 @@
-API_KEY = "sk-proj-abc123thisisafakekeybutimagineitswreal"
+import os
+from dotenv import load_dotenv
 
-print(API_KEY)
+load_dotenv(".env")
+
+print(os.environ.get("OPENAI_API_KEY"))
+print(os.environ.get("GOOGLE_API_KEY"))
+print(os.environ.get("GIT_ACCESS_TOKEN"))
+print(os.environ.get("API_KEY"))
+
+
